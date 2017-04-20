@@ -1,0 +1,1 @@
+BEIGE = '#EAE5B8'
