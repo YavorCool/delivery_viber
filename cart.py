@@ -16,7 +16,7 @@ class Cart:
         total_pay = 0
         for item in self.items:
             cart_str += item['product']['title'] + " Кол-во: {}\n".format(item['count'])
-            total_pay += int(item['product']['price'])
+            total_pay += int(item['product']['price']) * int(item['count'])
         cart_str += "Всего к оплате: {}".format(total_pay)
         return cart_str
 
